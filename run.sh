@@ -16,6 +16,9 @@ gcc -shared -o libhello.so libhello.o
 
 gcc -fpie -std=c99 -Wall -Wextra -g test.c -o dlinject
 
+
+rm -rif *.o
+
 fck test
 
 sleep 2
